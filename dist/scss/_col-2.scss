@@ -4,6 +4,7 @@
   width: 100%;
   border-radius: 5px;
   padding: 3rem 5rem;
+  position: relative;
   &__todos {
     display: flex;
 
@@ -38,6 +39,8 @@
     }
     .item--todos {
       margin: 2rem 0 0 0;
+      max-height: max-content;
+      height: 30rem;
       .todos {
         display: flex;
         justify-content: space-between;
@@ -45,6 +48,11 @@
 
         .checkbox {
           display: flex;
+          label {
+            &:hover {
+              cursor: pointer;
+            }
+          }
           .round {
             position: relative;
             width: 2rem;
@@ -90,20 +98,41 @@
           }
         }
 
-        .status {
+        .status.approved {
           background-color: $approvedBg;
-          padding: 0.3rem 0.7rem;
+          padding: 0.3rem 1.5rem;
           border-radius: 25px;
           color: $approvedText;
         }
+        .status.progress {
+          background-color: $progressBg;
+          padding: 0.3rem 1.2rem;
+          border-radius: 25px;
+          color: $progressText;
+        }
+        .status.review {
+          background-color: $reviewBg;
+          padding: 0.3rem 1.5rem;
+          border-radius: 25px;
+          color: $reviewText;
+        }
+        .status.waiting {
+          background-color: $waitingBg;
+          padding: 0.3rem 1.8rem;
+          border-radius: 25px;
+          color: $waitingText;
+        }
       }
+    }
+
+    .item--todos.max {
+      overflow-y: scroll;
     }
   }
   &__button {
-    height: 23rem;
-    display: flex;
-    justify-content: end;
-    align-items: end;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
 
     .button-wrapper {
       width: 100%;
@@ -116,7 +145,7 @@
         border: none;
         border-radius: 5px;
         padding: 0.7rem 1.5rem;
-        font-size: 1.2rem;
+        font-size: 2.5rem;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         box-shadow: 0 3px 5px $addButton;

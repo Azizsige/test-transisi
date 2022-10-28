@@ -26,6 +26,7 @@
             <div class="form-heading">
               <h1>Hi Samantha</h1>
               <p>Welcom back to workspace, we missed you</p>
+              <p id="num">0</p>
 
               <form class="form-heading__search">
                 <i class="fas fa-search"></i>
@@ -102,51 +103,65 @@
               <img src="./assets/Meatballs.png" alt="" />
             </div>
             <div class="item--todos">
-              <div class="todos">
+              <!-- <div class="todos">
                 <div class="checkbox">
                   <div class="round">
-                    <input type="checkbox" checked id="checkbox" />
-                    <label for="checkbox"></label>
+                    <input type="checkbox" checked id="approved" />
+                    <label for="approved"></label>
                   </div>
-                  <label for="item">Create initial layout for home</label>
+                  <label for="approved">Create initial layout for home</label>
                 </div>
-                <div class="status">
+                <div class="status approved">
                   <p>Approved</p>
                 </div>
               </div>
               <div class="todos">
                 <div class="checkbox">
                   <div class="round">
-                    <input type="checkbox" checked id="checkbox" />
-                    <label for="checkbox"></label>
+                    <input type="checkbox" checked id="progress" />
+                    <label for="progress"></label>
                   </div>
-                  <label for="item">Create initial layout for home</label>
+                  <label for="progress">Create initial layout for home</label>
                 </div>
-                <div class="status">
-                  <p>Approved</p>
+                <div class="status progress">
+                  <p>In Progress</p>
                 </div>
               </div>
               <div class="todos">
                 <div class="checkbox">
                   <div class="round">
-                    <input type="checkbox" checked id="checkbox" />
-                    <label for="checkbox"></label>
+                    <input type="checkbox" checked id="review" />
+                    <label for="review"></label>
                   </div>
-                  <label for="item">Create initial layout for home</label>
+                  <label for="review">Create initial layout for home</label>
                 </div>
-                <div class="status">
-                  <p>Approved</p>
+                <div class="status review">
+                  <p>In Review</p>
                 </div>
               </div>
+              <div class="todos">
+                <div class="checkbox">
+                  <div class="round">
+                    <input type="checkbox" checked id="waiting" />
+                    <label for="waiting"></label>
+                  </div>
+                  <label for="waiting">Create initial layout for home</label>
+                </div>
+                <div class="status waiting">
+                  <p>Waiting</p>
+                </div>
+              </div> -->
             </div>
           </div>
           <div class="col-2__button">
             <div class="button-wrapper">
-              <button class="btn">+</button>
+              <button id="increment" class="btn">+</button>
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <script src="./dist/js/app.js"></script>
   </body>
 </html>
