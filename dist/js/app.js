@@ -14,10 +14,10 @@ function renderData() {
     <div class="todos">
                 <div class="checkbox">
                   <div class="round">
-                    <input type="checkbox" checked id="approved" />
-                    <label for="approved"></label>
+                    <input type="checkbox" checked id="${item.id}" />
+                    <label for="${item.id}"></label>
                   </div>
-                  <label for="approved">${item.name}</label>
+                  <label for="${item.id}">${item.name}</label>
                 </div>
                 <div class="status ${item.class}">
                   <p>${item.status}</p>

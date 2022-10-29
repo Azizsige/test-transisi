@@ -86,7 +86,8 @@
         height: 23rem;
       }
       @include u.breakpoint(xxl) {
-        height: 29rem;
+        height: max-content;
+        max-height: 29rem;
       }
       .todos {
         display: flex;
