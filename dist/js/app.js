@@ -38,9 +38,8 @@ btn.addEventListener("click", function () {
   dummyJson.push(newTodo);
   console.log(dummyJson);
   contTodo.innerHTML = "";
-  if (dummyJson.length >= 10) {
+  if (dummyJson.length >= 8 || dummyJson.length >= 10) {
     contTodo.classList.add("max");
-    renderData();
   }
   renderData();
 });
